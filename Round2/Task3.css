@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	background: #eaa3af;*/
+	color: black;
+}
+.game{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 3rem;
+	z-index: 2;
+}
+.score{
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+}
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+.options{
+	display: flex;
+	width: 20vw;
+	justify-content: space-evenly;
+	margin-top: 5rem;
+}
+.rock, .paper, .scissor{
+	padding: 0.5rem;
+	width: 100px;
+	border-radius: 10px;
+	background: #e23d74;
+	outline: none;
+	border-color: #e23d74;
+	border: none;
+	cursor: pointer;
+}
+
+.move{
+	font-size: 2rem;
+	font-weight: bold;
+}
+.reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: red;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.result{
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+@media screen and (max-width: 612px)
+{
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
